@@ -1,0 +1,30 @@
+#+FILETAGS: HOMELAB PERSONAL
+
+
+* OBJECTIVE
+
+** TODO Move project structure into github and replace existing repo in GITHUB
+SCHEDULED: <2023-06-19 Mon>
+*** TODO Symlink Homelab.org into README.org
+*** TODO Remove github repo of old homelab (I wish I knew enough git to fix all of this.)
+*** TODO Setup new git repo (use magit so we can finally learn it here)
+*** TODO create first commit messages
+** TODO Figure out how to do automatic git commits and tracking on the hour?
+** Setup Kickoff image
+*** NEXT Validate Proxmox is ready for automation
+SCHEDULED: <2023-06-18 Sun 23:30>
+*** TODO Generate a kickoff image to start the automation process
+**** This image will serve as the starting point for the automation of the lab
+**** We need this to be generated before we are able to automate into proxmox
+***** Initial thoughts: Create something that can be quickly pulled into any new machine to start the setup of the lab
+***** QUESTION: Should we have this image set up proxmox as well?
+****** Proxmox in my lab runs on bare metal, so getting this to install on an unbooted box probably isn't worth it
+**** TODO Identify tools needed for this 'kickoff' image
+***** TODO Ansible
+***** TODO Docker
+***** TODO Packer?
+***** TODO Terraform?
+*** TODO Create our first automation off of the generated starter image
+*** TODO Setup an LXC to share out the zfs pool from Proxmox?
+**** TODO How are we going to handle permissions on the shared out zfs pool
+***** QUESTION Do I need to support anything outside of NFS?
