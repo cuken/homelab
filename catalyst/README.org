@@ -1,0 +1,11 @@
+#+title: Catalyst README.org
+#+author: Cuken
+
+* Introduction
+
+Catalyst is the kick off image that will start all other processes. The automation jobs will be ran from within catalyst.
+As such, we need to build catalyst with all automation tools embedded.
+
+* Current implementation
+
+Catalyst will use docker to spin up and manage the installed applications on a targeting PROXMOX host.
